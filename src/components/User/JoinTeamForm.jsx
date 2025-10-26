@@ -15,7 +15,7 @@ const { login } = useAuth(); // ✅
     e.preventDefault();
 
     try {
-      const res = await fetch(`${import.meta.env.VITE_BASE_URL}/api/team/join`, {
+      const res = await fetch(`${import.meta.env.VITE_BASE_URL}/team/join`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name, email, password, passcode }),
